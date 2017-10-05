@@ -1,0 +1,40 @@
+# Logging RLS sensor light value is 232, 236
+
+E8 04 3F A0 FF 8C
+RLS  --> DIA : Diagnostic command acknowledged, Data="FF"    [ÿ]
+
+3F 06 E8 06 02 55 01 81
+DIA  --> RLS : Read memory: Block 02, Offset 55, Length 01
+
+E8 04 3F A0 EC 9F
+RLS  --> DIA : Diagnostic command acknowledged, Data="EC"    [ì]
+
+3F 06 E8 06 02 56 01 82
+DIA  --> RLS : Read memory: Block 02, Offset 56, Length 01
+
+E8 04 3F A0 FF 8C
+RLS  --> DIA : Diagnostic command acknowledged, Data="FF"    [ÿ]
+
+3F 06 E8 06 02 57 01 83
+DIA  --> RLS : Read memory: Block 02, Offset 57, Length 01
+
+E8 04 3F A0 EC 9F
+RLS  --> DIA : Diagnostic command acknowledged, Data="EC"    [ì]
+
+3F 03 E8 1B CF
+DIA  --> RLS : Read config data
+
+
+# Logging RLS sensor light value is 0
+
+80 05 BF 18 00 00 22
+IKE  --> GLO : Speed/RPM: Speed 0 km/h, 0 RPM
+
+3F 06 E8 06 02 56 01 82
+DIA  --> RLS : Read memory: Block 02, Offset 56, Length 01
+
+E8 04 3F A0 00 73
+RLS  --> DIA : Diagnostic command acknowledged, Data="00"    [ ]
+
+3F 06 E8 06 02 57 01 83
+DIA  --> RLS : Read memory: Block 02, Offset 57, Length 01

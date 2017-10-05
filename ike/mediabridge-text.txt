@@ -1,0 +1,2 @@
+C8 11 80 23 42 30 53 55 50 50 4F 52 54 45 44 20 20 20 66
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="SUPPORTED   "
