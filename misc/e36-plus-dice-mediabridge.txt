@@ -1,0 +1,119 @@
+! IGN ON
+
+68 03 C0 01 AA
+RAD  --> MID : Device status request
+68 03 A0 01 CA
+RAD  --> FID : Device status request
+68 03 80 01 EA
+RAD  --> IKE : Device status request
+76 04 FF 02 01 8E
+CDCD --> LOC : Device status ready, after Reset after Reset
+68 03 C0 01 AA
+RAD  --> MID : Device status request
+68 03 A0 01 CA
+RAD  --> FID : Device status request
+68 03 80 01 EA
+RAD  --> IKE : Device status request
+68 04 FF 3B 00 A8
+RAD  --> LOC : Radio/Telephone control, No_buttons_pressed
+68 03 D0 5D E6
+RAD  --> LCM : Light dimmer status request
+68 04 BF 02 00 D1
+RAD  --> GLO : Device status ready
+68 03 18 01 72
+RAD  --> CDC : Device status request
+18 04 68 02 00 76
+CDC  --> RAD : Device status ready
+68 05 18 38 01 00 4C
+RAD  --> CDC : CD_control, Stop
+68 05 18 38 00 00 4D
+RAD  --> CDC : CD_control, Status_Request
+18 0A 68 39 00 02 00 3F 00 01 01 7E
+CDC  --> RAD : CD_status, Stop  Request=Pause  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+68 05 18 38 07 00 4A
+RAD  --> CDC : CD_control, Mode7_Function_00
+18 0A 68 39 02 02 00 3F 00 01 01 7C
+CDC  --> RAD : CD_status, Play  Request=Pause  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+68 03 6A 01 00
+RAD  --> DSP : Device status request
+68 05 18 38 08 00 45
+RAD  --> CDC : CD_control, Random_Off
+18 0A 68 39 02 02 00 3F 00 01 01 7C
+CDC  --> RAD : CD_status, Play  Request=Pause  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+68 05 18 38 03 00 4E
+RAD  --> CDC : CD_control, Play
+18 0A 68 39 02 09 00 3F 00 01 01 77
+CDC  --> RAD : CD_status, Play  Request=Play  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+68 03 6A 01 00
+RAD  --> DSP : Device status request
+18 0A 68 39 08 09 00 3F 00 01 00 7C
+CDC  --> RAD : CD_status, Loading  Request=Play  CD=1  Track=0  CDs_Loaded=P1,P2,P3,P4,P5,P6
+18 0A 68 39 08 09 00 3F 00 01 01 7D
+CDC  --> RAD : CD_status, Loading  Request=Play  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+18 0A 68 39 07 09 00 3F 00 01 01 72
+CDC  --> RAD : CD_status, End  Request=Play  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+18 0A 68 39 02 09 00 3F 00 01 01 77
+CDC  --> RAD : CD_status, Play  Request=Play  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+C8 11 80 23 42 30 55 53 42 20 20 20 20 20 20 20 20 20 6C
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="USB         "
+18 0A 68 39 08 09 00 3F 00 01 00 7C
+CDC  --> RAD : CD_status, Loading  Request=Play  CD=1  Track=0  CDs_Loaded=P1,P2,P3,P4,P5,P6
+18 0A 68 39 08 09 00 3F 00 01 01 7D
+CDC  --> RAD : CD_status, Loading  Request=Play  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+18 0A 68 39 07 09 00 3F 00 01 01 72
+CDC  --> RAD : CD_status, End  Request=Play  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+18 0A 68 39 02 09 00 3F 00 01 01 77
+CDC  --> RAD : CD_status, Play  Request=Play  CD=1  Track=1  CDs_Loaded=P1,P2,P3,P4,P5,P6
+C8 11 80 23 42 30 55 4E 53 55 50 50 4F 52 54 45 44 20 7D
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="UNSUPPORTED "
+C8 11 80 23 42 30 4E 53 55 50 50 4F 52 54 45 44 20 20 08
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="NSUPPORTED  "
+C8 11 80 23 42 30 53 55 50 50 4F 52 54 45 44 20 20 20 66
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="SUPPORTED   "
+C8 11 80 23 42 30 55 50 50 4F 52 54 45 44 20 20 20 20 15
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="UPPORTED    "
+C8 11 80 23 42 30 50 50 4F 52 54 45 44 20 20 20 20 20 60
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="PPORTED     "
+68 03 18 01 72
+RAD  --> CDC : Device status request
+18 04 68 02 00 76
+CDC  --> RAD : Device status ready
+C8 11 80 23 42 30 50 4F 52 54 45 44 20 20 20 20 20 20 10
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="PORTED      "
+C8 11 80 23 42 30 4F 52 54 45 44 20 20 20 20 20 20 20 60
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="ORTED       "
+C8 11 80 23 42 30 52 54 45 44 20 20 20 20 20 20 20 20 0F
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="RTED        "
+C8 11 80 23 42 30 55 4E 53 55 50 50 4F 52 54 45 44 20 7D
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="UNSUPPORTED "
+C8 11 80 23 42 30 4E 53 55 50 50 4F 52 54 45 44 20 20 08
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="NSUPPORTED  "
+C8 11 80 23 42 30 53 55 50 50 4F 52 54 45 44 20 20 20 66
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="SUPPORTED   "
+C8 11 80 23 42 30 55 50 50 4F 52 54 45 44 20 20 20 20 15
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="UPPORTED    "
+C8 11 80 23 42 30 50 50 4F 52 54 45 44 20 20 20 20 20 60
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="PPORTED     "
+C8 11 80 23 42 30 50 4F 52 54 45 44 20 20 20 20 20 20 10
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="PORTED      "
+C8 11 80 23 42 30 4F 52 54 45 44 20 20 20 20 20 20 20 60
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="ORTED       "
+C8 11 80 23 42 30 52 54 45 44 20 20 20 20 20 20 20 20 0F
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="RTED        "
+C8 11 80 23 42 30 55 4E 53 55 50 50 4F 52 54 45 44 20 7D
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="UNSUPPORTED "
+C8 11 80 23 42 30 4E 53 55 50 50 4F 52 54 45 44 20 20 08
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="NSUPPORTED  "
+C8 11 80 23 42 30 53 55 50 50 4F 52 54 45 44 20 20 20 66
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="SUPPORTED   "
+C8 11 80 23 42 30 55 50 50 4F 52 54 45 44 20 20 20 20 15
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="UPPORTED    "
+
+! IGN OFF
+
+C8 11 80 23 42 30 50 50 4F 52 54 45 44 20 20 20 20 20 60
+TEL  --> IKE : Display Text, Layout=0x42:  Flags=Bit4,CLS  F0="PPORTED     "
+68 03 18 01 72
+RAD  --> CDC : Device status request
+18 04 68 02 00 76
+CDC  --> RAD : Device status ready

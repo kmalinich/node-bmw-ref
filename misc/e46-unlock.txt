@@ -1,0 +1,147 @@
+80 04 BF 11 00 2A
+IKE  --> GLO : Ignition status: Off
+
+E8 06 00 58 FF 7F 00 36
+RLS  --> GM  : Headlight wipe interval, Data="FF 7F 00"
+
+E8 05 D0 59 10 00 74
+RLS  --> LCM : Low beam/Park, Data="10 00"
+
+E8 05 D0 59 50 00 34
+RLS  --> LCM : Low beam/Park, Data="50 00"
+
+44 05 BF 74 04 04 8A
+EWS  --> GLO : Immobiliser status: Valid_key_detected Key_4
+80 04 BF 11 01 2B
+IKE  --> GLO : Ignition status: Pos1_Acc
+80 09 BF 13 00 00 00 00 00 00 25
+IKE  --> GLO : IKE sensor status
+D0 07 BF 5B 00 00 00 00 33
+LCM  --> GLO : Lamp status: All_Off  All_OK
+00 05 BF 7A 51 20 B1
+GM   --> GLO : Doors/flaps status: Open:  DvrDoorFr Boot   Ctrl_Locking: Unlocked
+00 04 BF 76 00 CD
+GM   --> GLO : Crash Alarm: No_Crash
+00 05 BF 7D 00 10 D7
+GM   --> GLO : Sunroof control: Unlock DB2=0x10
+00 04 BF 72 02 CB
+GM   --> GLO : ChkCtrl Remote Central Locking: No_Button_Pressed
+80 0C FF 24 01 00 31 31 3A 33 37 41 4D 64
+IKE  --> LOC : Update Text:  Layout=Time  Flags=  F0="11:37AM"
+80 0A FF 24 03 00 2B 31 35 2E 35 66
+IKE  --> LOC : Update Text:  Layout=Outside_Temp  Flags=  F0="+15.5"
+44 05 BF 74 05 04 8B
+EWS  --> GLO : Immobiliser status: Immobilisation_deactivated Valid_key_detected Key_4
+80 0A FF 24 03 00 2B 31 35 2E 35 66
+IKE  --> LOC : Update Text:  Layout=Outside_Temp  Flags=  F0="+15.5"
+80 09 FF 24 06 00 20 20 35 34 55
+IKE  --> LOC : Update Text:  Layout=Range  Flags=  F0="  54"
+80 09 FF 24 04 00 31 37 2E 34 4A
+IKE  --> LOC : Update Text:  Layout=Consumption_1  Flags=  F0="17.4"
+80 04 BF 11 03 29
+IKE  --> GLO : Ignition status: Pos1_Acc Pos2_On
+80 09 BF 13 03 00 00 00 00 00 26
+IKE  --> GLO : IKE sensor status: Handbrake_On  Oil_Pressure_Low
+D0 07 BF 5B 00 00 00 00 33
+LCM  --> GLO : Lamp status: All_Off  All_OK
+00 04 BF 72 02 CB
+GM   --> GLO : ChkCtrl Remote Central Locking: No_Button_Pressed
+80 03 D0 53 00
+IKE  --> LCM : Vehicle data request
+D0 10 80 54 41 5A 19 27 80 06 21 41 2C 00 00 24 EC 33
+LCM  --> IKE : Vehicle data status: VIN XXXXXXX; Total dist 156900 kms; SI-L 3000 litres since last service; ; SI-T 9452 days since last service
+80 09 BF 13 03 B0 00 00 00 00 96
+IKE  --> GLO : IKE sensor status: Handbrake_On  Oil_Pressure_Low  Gear_P
+D0 07 BF 5C FF FF 00 00 34
+LCM  --> GLO : Light dimmer: Data="FF FF 00 00"
+
+E8 03 00 75 9E
+RLS  --> GM  : Wiper status request
+
+00 04 E8 77 05 9E
+GM   --> RLS : Wiper status, Data="05"
+50 04 FF 3B 00 90
+MFL  --> LOC : Radio/Telephone control:_pressed
+
+E8 06 00 58 FF 7F 00 36
+RLS  --> GM  : Headlight wipe interval, Data="FF 7F 00"
+
+E8 05 D0 59 50 00 34
+RLS  --> LCM : Low beam/Park, Data="50 00"
+
+80 09 FF 24 0A 00 31 39 2E 38 46
+IKE  --> LOC : Update Text:  Layout=Average_Speed  Flags=  F0="19.8"
+80 09 BF 13 03 B0 00 04 00 00 92
+IKE  --> GLO : IKE sensor status: Handbrake_On  Oil_Pressure_Low  Gear_P
+5B 03 00 71 29
+IHKA --> GM  : Rain sensor status
+00 04 BF 72 02 CB
+GM   --> GLO : ChkCtrl Remote Central Locking: No_Button_Pressed
+50 03 C8 01 9A
+MFL  --> TEL : Device status request
+5B 04 BF 02 01 E3
+IHKA --> GLO : Device status ready after Reset after Reset
+80 04 BF 11 03 29
+IKE  --> GLO : Ignition status: Pos1_Acc Pos2_On
+60 04 BF 02 01 D8
+PDC  --> GLO : Device status ready after Reset after Reset
+80 04 BF 11 03 29
+IKE  --> GLO : Ignition status: Pos1_Acc Pos2_On
+60 03 80 1D FE
+PDC  --> IKE : Temperature request
+80 05 BF 18 00 00 22
+IKE  --> GLO : Speed/RPM: Speed 0 km/h, 0 RPM
+80 06 BF 19 0F 0F 00 20
+IKE  --> GLO : Temperature: Outside 15°C, Coolant 15°C
+5B 03 80 12 CA
+IHKA --> IKE : IKE sensor status request
+80 09 BF 13 03 B0 00 04 00 00 92
+IKE  --> GLO : IKE sensor status: Handbrake_On  Oil_Pressure_Low  Gear_P
+5B 03 D0 5D D5
+IHKA --> LCM : Light dimmer status request
+D0 07 BF 5C FF FF 00 00 34
+LCM  --> GLO : Light dimmer: Data="FF FF 00 00"
+44 03 80 16 D1
+EWS  --> IKE : Odometer request
+80 06 BF 17 00 00 00 2E
+IKE  --> GLO : Odometer: 0 km
+80 09 BF 13 03 B0 00 00 00 00 96
+IKE  --> GLO : IKE sensor status: Handbrake_On  Oil_Pressure_Low  Gear_P
+D0 07 BF 5C FF FF FF 00 CB
+LCM  --> GLO : Light dimmer: Data="FF FF FF 00"
+80 05 BF 18 00 00 22
+IKE  --> GLO : Speed/RPM: Speed 0 km/h, 0 RPM
+50 03 C8 01 9A
+MFL  --> TEL : Device status request
+80 05 BF 18 00 00 22
+IKE  --> GLO : Speed/RPM: Speed 0 km/h, 0 RPM
+80 05 BF 18 00 00 22
+IKE  --> GLO : Speed/RPM: Speed 0 km/h, 0 RPM
+80 05 BF 18 00 00 22
+IKE  --> GLO : Speed/RPM: Speed 0 km/h, 0 RPM
+
+E8 06 00 58 FF 7F 00 36
+RLS  --> GM  : Headlight wipe interval, Data="FF 7F 00"
+
+E8 05 D0 59 50 00 34
+RLS  --> LCM : Low beam/Park, Data="50 00"
+
+50 03 C8 01 9A
+MFL  --> TEL : Device status request
+5B 05 80 83 00 08 55
+IHKA --> IKE : Air conditioning compressor status
+80 09 BF 13 03 B0 00 00 00 00 96
+IKE  --> GLO : IKE sensor status: Handbrake_On  Oil_Pressure_Low  Gear_P
+3F 03 5B 00 67
+DIA  --> IHKA: Read identity
+5B 0F 3F A0 88 38 24 46 10 02 31 00 11 99 03 04 B5
+IHKA --> DIA : Diagnostic command acknowledged, Data="88 38 24 46 10 02 31 00 11 99 03 04"    [ˆ8$F  1  ™  ]
+80 05 BF 18 00 00 22
+IKE  --> GLO : Speed/RPM: Speed 0 km/h, 0 RPM
+80 06 BF 19 0F 0F 00 20
+IKE  --> GLO : Temperature: Outside 15°C, Coolant 15°C
+80 0C FF 24 01 00 31 31 3A 33 38 41 4D 6B
+IKE  --> LOC : Update Text:  Layout=Time  Flags=  F0="11:38AM"
+80 05 BF 18 00 00 22
+IKE  --> GLO : Speed/RPM: Speed 0 km/h, 0 RPM
+3F 03 5B 00 67
