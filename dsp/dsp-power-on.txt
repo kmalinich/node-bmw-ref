@@ -1,0 +1,54 @@
+48 06  BMBT->RAD  button            on/off_pressed
+
+36 AF  RAD-->LOC  control-audio     source  = off
+36 72  RAD-->LOC  control-audio     bass    = -2
+36 C0  RAD-->LOC  control-audio     treble  = 0
+36 80  RAD-->LOC  control-audio     fader   = center0
+36 50  RAD-->LOC  control-audio     balance = center0
+
+48 86  BMBT->RAD  button            on/off_released
+
+36 E1  RAD-->LOC  control-audio     dsp_function 1
+36 30  RAD-->LOC  control-audio     dsp_function 0
+36 A1  RAD-->LOC  control-audio     source = tuner/tape
+
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+
+4A FF  RAD->BMBT  control-cassette  power_on
+
+4B 05  BMBT->RAD  status-cassette   no_tape
+
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+32 31  RAD-->DSP  control-volume    +3
+
+01     BMBT->RAD  status-device     request
+02 00  RAD-->LOC  status-device     ready
+01     RAD-->CDC  status-device     request
+
+32 21  BMBT->RAD  control-volume    +2
+32 11  BMBT->RAD  control-volume    +1
+32 11  BMBT->RAD  control-volume    +1
+32 20  BMBT->RAD  control-volume    -2
+32 20  BMBT->RAD  control-volume    -2
+32 10  BMBT->RAD  control-volume    -1
+
+48 06  BMBT->RAD  button            on/off_pressed
+
+36 AF  RAD-->LOC  control-audio     source = off
+4A 00  RAD->BMBT  control-cassette  power_off
+
+4B 05  BMBT->RAD  status-cassette   no_tape
+
+32 10  BMBT->RAD  control-volume    -1
+
+48 86  BMBT->RAD  button            on/off_released
+01     BMBT->RAD  status-device     request
+02 00  RAD-->LOC  status-device     ready
