@@ -1,0 +1,8 @@
+1A 11 00,CCM,IKE,Text/Gong Immediate Clear Gong_off
+1A 11 08,CCM,IKE,Text/Gong Immediate Clear Gong_off
+1A 30 00,CCM,IKE,Text/Gong Immediate Clear Gong_off Warning_symbol_off
+1A 30 01,CCM,IKE,Text/Gong Immediate Clear Gong_off Warning_symbol_off
+1A 35 00,CCM,IKE,Text/Gong Immediate Clear Gong_off Warning_symbol_off
+1A 37 00,CCM,IKE,Text/Gong           Clear Gong_off Warning_symbol_off
+1A 37 04,CCM,IKE,Text/Gong           Clear Gong_off Warning_symbol_off
+1A 37 08,CCM,IKE,Text/Gong           Clear Gong_off Warning_symbol_off
