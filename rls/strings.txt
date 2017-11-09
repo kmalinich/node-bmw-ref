@@ -1,39 +1,30 @@
-21 02
-
-50 00
-RLS --> LCM : Light control status, Control: Turn_lights_off Sensor_OK Level_Signal_invalid Reason: Data="50 00"
-
-51 08
-RLS --> LCM : Light sensor bright
-
-11 08
-RLS --> LCM : Light sensor dark
-
-
 // Source      : 0xE8 (RLS)
 // Destination : 0xD0 (LCM)
 // Command     : 0x59 (Light control)
 // Source, length, destination, command, and checksum removed from strings below
 
+
+// Examples
 D1 D2
 11 01 Intensity=1, Lights=on,  Reason=Twilight
-21 02 Intensity=1, Lights=on,  Reason=Darkness
-31 04 Intensity=1, Lights=on,  Reason=Rain
-41 08 Intensity=1, Lights=on,  Reason=Tunnel
-50 00 Intensity=1, Lights=off, Reason=N/A
-60 00 Intensity=1, Lights=off, Reason=N/A
+21 02 Intensity=2, Lights=on,  Reason=Darkness
+31 04 Intensity=3, Lights=on,  Reason=Rain
+41 08 Intensity=4, Lights=on,  Reason=Tunnel
+50 00 Intensity=5, Lights=off, Reason=N/A
+60 00 Intensity=6, Lights=off, Reason=N/A
 
+// D1 - Lights on/off + intensity
+0x01 : Bit0      : Lights on
+0x10 : Bit4      : Intensity 1
+0x20 : Bit5      : Intensity 2
+0x30 : Bit4+Bit5 : Intensity 3
+0x40 : Bit6      : Intensity 4
+0x50 : Bit4+Bit6 : Intensity 5
+0x60 : Bit5+Bit6 : Intensity 6
 
-// D1: Reason
-Bit 0 : Twilight
-Bit 1 : Darkness
-Bit 2 : Rain
-Bit 3 : Tunnel
-Bit 4 : Basement/garage
-
-// D2: Intensity+On/off
-0x11 : Intensity 1, Lights on
-0x21 : Intensity 2, Lights on
-0x31 : Intensity 3, Lights on
-0x41 : Intensity 4, Lights on
-0x50 : Intensity 5, Lights off
+// D2 - Reason
+0x01 : Bit0 : Twilight
+0x02 : Bit1 : Darkness
+0x04 : Bit2 : Rain
+0x08 : Bit3 : Tunnel
+0x10 : Bit4 : Basement/garage
