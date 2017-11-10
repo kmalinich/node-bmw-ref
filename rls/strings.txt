@@ -27,4 +27,4 @@ D1 D2
 0x02 : Bit1 : Darkness
 0x04 : Bit2 : Rain
 0x08 : Bit3 : Tunnel
-0x10 : Bit4 : Basement/garage
+0x10 : Bit4 : Garage
