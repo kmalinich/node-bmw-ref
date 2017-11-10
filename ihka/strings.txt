@@ -45,8 +45,8 @@ F6: Fresh air
 // Get IO status
 0B 04 51
 
-// IO status response (DBUS)
-5B 08 A0 E3 00 0F E5 FA
+// ACK: IO status response
+A0 E3 00 0F E5
 
 
 // Water valve commands (DBUS)
