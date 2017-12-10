@@ -1,4 +1,4 @@
-// Checksum and length removed
+// Source, destination, length, and checksum removed from data
 
 00 00,DIA,GM,Read identity Data="00"
 00 01,DIA,GM,Read identity Data="01"
