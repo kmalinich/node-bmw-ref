@@ -3,6 +3,8 @@
 3B 80 41 14 Request aux vent on
 3B 80 41 13 Request aux vent off
 
+// Setting timer
+[IB] [       GT>>IKE       ] [       UNKNOWN       ] 0x40
 
 SET TIMER:
 3B 80 40 TT HH MM

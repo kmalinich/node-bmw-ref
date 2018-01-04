@@ -18,7 +18,8 @@ Frequency bands = {
 	12KHz
 }
 
-// Some modes do not allow the driver mode to be turned on.
+// Some modes do not allow M-Audio to be turned on
+// EQ bands can only be set in memory 1, memory 2, and memory 3
 DSP modes = {
 	concert hall,
 	jazz club,
@@ -69,7 +70,9 @@ DSP modes = {
 68 6A 34 0D,RAD --> DSP: DSP equalizer button Data="" // memory 2
 68 6A 34 0E,RAD --> DSP: DSP equalizer button Data="" // memory 3
 68 6A 34 0F,RAD --> DSP: DSP equalizer button Data="" // DSP off
+// 0x20 means something in data.msg[1] here...
 68 6A 34 28,RAD --> DSP: DSP equalizer button Data=""
+
 
 68 6A 34 90 00,RAD --> DSP: DSP equalizer button M-Audio off
 68 6A 34 91 00,RAD --> DSP: DSP equalizer button M-Audio on
