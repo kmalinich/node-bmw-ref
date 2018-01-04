@@ -12,10 +12,10 @@ Frequency bands = {
 	80Hz
 	200Hz,
 	500Hz,
-	1KHz,
-	2KHz,
-	5KHz,
-	12KHz
+	1kHz,
+	2kHz,
+	5kHz,
+	12kHz
 }
 
 // Some modes do not allow M-Audio to be turned on
@@ -31,6 +31,7 @@ DSP modes = {
 }
 
 68 6A 01,RAD --> DSP: Device status request
+
 68 6A 32 10,RAD --> DSP: Volume -1
 68 6A 32 11,RAD --> DSP: Volume +1
 68 6A 32 20,RAD --> DSP: Volume -2
@@ -63,6 +64,7 @@ DSP modes = {
 68 6A 32 F1,RAD --> DSP: Volume +15
 
 68 6A 34 08,RAD --> DSP: Get DSP memory
+
 68 6A 34 09,RAD --> DSP: DSP equalizer button Data="" // concert hall
 68 6A 34 0A,RAD --> DSP: DSP equalizer button Data="" // jazz club
 68 6A 34 0B,RAD --> DSP: DSP equalizer button Data="" // cathedral
@@ -73,11 +75,169 @@ DSP modes = {
 // 0x20 means something in data.msg[1] here...
 68 6A 34 28,RAD --> DSP: DSP equalizer button Data=""
 
-
 68 6A 34 90 00,RAD --> DSP: DSP equalizer button M-Audio off
 68 6A 34 91 00,RAD --> DSP: DSP equalizer button M-Audio on
 
+
+
+// DSP delta EQ updates (from MkIII navigation, US-market 2002 E39 M5)
+
 68 6A 34 95,RAD --> DSP: Set DSP memory
+
+38 6A 34 95 15 1A,GT ---> DSP: Set band EQ 80Hz: -10
+38 6A 34 95 15 19,GT ---> DSP: Set band EQ 80Hz: -9
+38 6A 34 95 15 18,GT ---> DSP: Set band EQ 80Hz: -8
+38 6A 34 95 15 17,GT ---> DSP: Set band EQ 80Hz: -7
+38 6A 34 95 15 16,GT ---> DSP: Set band EQ 80Hz: -6
+38 6A 34 95 15 15,GT ---> DSP: Set band EQ 80Hz: -5
+38 6A 34 95 15 14,GT ---> DSP: Set band EQ 80Hz: -4
+38 6A 34 95 15 13,GT ---> DSP: Set band EQ 80Hz: -3
+38 6A 34 95 15 12,GT ---> DSP: Set band EQ 80Hz: -2
+38 6A 34 95 15 11,GT ---> DSP: Set band EQ 80Hz: -1
+38 6A 34 95 15 00,GT ---> DSP: Set band EQ 80Hz: 0
+38 6A 34 95 15 01,GT ---> DSP: Set band EQ 80Hz: +1
+38 6A 34 95 15 02,GT ---> DSP: Set band EQ 80Hz: +2
+38 6A 34 95 15 03,GT ---> DSP: Set band EQ 80Hz: +3
+38 6A 34 95 15 04,GT ---> DSP: Set band EQ 80Hz: +4
+38 6A 34 95 15 05,GT ---> DSP: Set band EQ 80Hz: +5
+38 6A 34 95 15 06,GT ---> DSP: Set band EQ 80Hz: +6
+38 6A 34 95 15 07,GT ---> DSP: Set band EQ 80Hz: +7
+38 6A 34 95 15 08,GT ---> DSP: Set band EQ 80Hz: +8
+38 6A 34 95 15 09,GT ---> DSP: Set band EQ 80Hz: +9
+38 6A 34 95 15 0A,GT ---> DSP: Set band EQ 80Hz: +10
+
+38 6A 34 95 15 3A,GT ---> DSP: Set band EQ 200Hz: -10
+38 6A 34 95 15 39,GT ---> DSP: Set band EQ 200Hz: -9
+38 6A 34 95 15 38,GT ---> DSP: Set band EQ 200Hz: -8
+38 6A 34 95 15 37,GT ---> DSP: Set band EQ 200Hz: -7
+38 6A 34 95 15 36,GT ---> DSP: Set band EQ 200Hz: -6
+38 6A 34 95 15 35,GT ---> DSP: Set band EQ 200Hz: -5
+38 6A 34 95 15 34,GT ---> DSP: Set band EQ 200Hz: -4
+38 6A 34 95 15 33,GT ---> DSP: Set band EQ 200Hz: -3
+38 6A 34 95 15 32,GT ---> DSP: Set band EQ 200Hz: -2
+38 6A 34 95 15 31,GT ---> DSP: Set band EQ 200Hz: -1
+38 6A 34 95 15 20,GT ---> DSP: Set band EQ 200Hz: 0
+38 6A 34 95 15 21,GT ---> DSP: Set band EQ 200Hz: +1
+38 6A 34 95 15 22,GT ---> DSP: Set band EQ 200Hz: +2
+38 6A 34 95 15 23,GT ---> DSP: Set band EQ 200Hz: +3
+38 6A 34 95 15 24,GT ---> DSP: Set band EQ 200Hz: +4
+38 6A 34 95 15 25,GT ---> DSP: Set band EQ 200Hz: +5
+38 6A 34 95 15 26,GT ---> DSP: Set band EQ 200Hz: +6
+38 6A 34 95 15 27,GT ---> DSP: Set band EQ 200Hz: +7
+38 6A 34 95 15 28,GT ---> DSP: Set band EQ 200Hz: +8
+38 6A 34 95 15 29,GT ---> DSP: Set band EQ 200Hz: +9
+38 6A 34 95 15 2A,GT ---> DSP: Set band EQ 200Hz: +10
+
+38 6A 34 95 15 5A,GT ---> DSP: Set band EQ 500Hz: -10
+38 6A 34 95 15 59,GT ---> DSP: Set band EQ 500Hz: -9
+38 6A 34 95 15 58,GT ---> DSP: Set band EQ 500Hz: -8
+38 6A 34 95 15 57,GT ---> DSP: Set band EQ 500Hz: -7
+38 6A 34 95 15 56,GT ---> DSP: Set band EQ 500Hz: -6
+38 6A 34 95 15 55,GT ---> DSP: Set band EQ 500Hz: -5
+38 6A 34 95 15 54,GT ---> DSP: Set band EQ 500Hz: -4
+38 6A 34 95 15 53,GT ---> DSP: Set band EQ 500Hz: -3
+38 6A 34 95 15 52,GT ---> DSP: Set band EQ 500Hz: -2
+38 6A 34 95 15 51,GT ---> DSP: Set band EQ 500Hz: -1
+38 6A 34 95 15 40,GT ---> DSP: Set band EQ 500Hz: 0
+38 6A 34 95 15 41,GT ---> DSP: Set band EQ 500Hz: +1
+38 6A 34 95 15 42,GT ---> DSP: Set band EQ 500Hz: +2
+38 6A 34 95 15 43,GT ---> DSP: Set band EQ 500Hz: +3
+38 6A 34 95 15 44,GT ---> DSP: Set band EQ 500Hz: +4
+38 6A 34 95 15 45,GT ---> DSP: Set band EQ 500Hz: +5
+38 6A 34 95 15 46,GT ---> DSP: Set band EQ 500Hz: +6
+38 6A 34 95 15 47,GT ---> DSP: Set band EQ 500Hz: +7
+38 6A 34 95 15 48,GT ---> DSP: Set band EQ 500Hz: +8
+38 6A 34 95 15 49,GT ---> DSP: Set band EQ 500Hz: +9
+38 6A 34 95 15 4A,GT ---> DSP: Set band EQ 500Hz: +10
+
+38 6A 34 95 15 7A,GT ---> DSP: Set band EQ 1kHz: -10
+38 6A 34 95 15 79,GT ---> DSP: Set band EQ 1kHz: -9
+38 6A 34 95 15 78,GT ---> DSP: Set band EQ 1kHz: -8
+38 6A 34 95 15 77,GT ---> DSP: Set band EQ 1kHz: -7
+38 6A 34 95 15 76,GT ---> DSP: Set band EQ 1kHz: -6
+38 6A 34 95 15 75,GT ---> DSP: Set band EQ 1kHz: -5
+38 6A 34 95 15 74,GT ---> DSP: Set band EQ 1kHz: -4
+38 6A 34 95 15 73,GT ---> DSP: Set band EQ 1kHz: -3
+38 6A 34 95 15 72,GT ---> DSP: Set band EQ 1kHz: -2
+38 6A 34 95 15 71,GT ---> DSP: Set band EQ 1kHz: -1
+38 6A 34 95 15 60,GT ---> DSP: Set band EQ 1kHz: 0
+38 6A 34 95 15 61,GT ---> DSP: Set band EQ 1kHz: +1
+38 6A 34 95 15 62,GT ---> DSP: Set band EQ 1kHz: +2
+38 6A 34 95 15 63,GT ---> DSP: Set band EQ 1kHz: +3
+38 6A 34 95 15 64,GT ---> DSP: Set band EQ 1kHz: +4
+38 6A 34 95 15 65,GT ---> DSP: Set band EQ 1kHz: +5
+38 6A 34 95 15 66,GT ---> DSP: Set band EQ 1kHz: +6
+38 6A 34 95 15 67,GT ---> DSP: Set band EQ 1kHz: +7
+38 6A 34 95 15 68,GT ---> DSP: Set band EQ 1kHz: +8
+38 6A 34 95 15 69,GT ---> DSP: Set band EQ 1kHz: +9
+38 6A 34 95 15 6A,GT ---> DSP: Set band EQ 1kHz: +10
+
+38 6A 34 95 15 9A,GT ---> DSP: Set band EQ 2kHz: -10
+38 6A 34 95 15 99,GT ---> DSP: Set band EQ 2kHz: -9
+38 6A 34 95 15 98,GT ---> DSP: Set band EQ 2kHz: -8
+38 6A 34 95 15 97,GT ---> DSP: Set band EQ 2kHz: -7
+38 6A 34 95 15 96,GT ---> DSP: Set band EQ 2kHz: -6
+38 6A 34 95 15 95,GT ---> DSP: Set band EQ 2kHz: -5
+38 6A 34 95 15 94,GT ---> DSP: Set band EQ 2kHz: -4
+38 6A 34 95 15 93,GT ---> DSP: Set band EQ 2kHz: -3
+38 6A 34 95 15 92,GT ---> DSP: Set band EQ 2kHz: -2
+38 6A 34 95 15 91,GT ---> DSP: Set band EQ 2kHz: -1
+38 6A 34 95 15 80,GT ---> DSP: Set band EQ 2kHz: 0
+38 6A 34 95 15 81,GT ---> DSP: Set band EQ 2kHz: +1
+38 6A 34 95 15 82,GT ---> DSP: Set band EQ 2kHz: +2
+38 6A 34 95 15 83,GT ---> DSP: Set band EQ 2kHz: +3
+38 6A 34 95 15 84,GT ---> DSP: Set band EQ 2kHz: +4
+38 6A 34 95 15 85,GT ---> DSP: Set band EQ 2kHz: +5
+38 6A 34 95 15 86,GT ---> DSP: Set band EQ 2kHz: +6
+38 6A 34 95 15 87,GT ---> DSP: Set band EQ 2kHz: +7
+38 6A 34 95 15 88,GT ---> DSP: Set band EQ 2kHz: +8
+38 6A 34 95 15 89,GT ---> DSP: Set band EQ 2kHz: +9
+38 6A 34 95 15 8A,GT ---> DSP: Set band EQ 2kHz: +10
+
+38 6A 34 95 15 AA,GT ---> DSP: Set band EQ 5kHz: -10
+38 6A 34 95 15 A9,GT ---> DSP: Set band EQ 5kHz: -9
+38 6A 34 95 15 A8,GT ---> DSP: Set band EQ 5kHz: -8
+38 6A 34 95 15 A7,GT ---> DSP: Set band EQ 5kHz: -7
+38 6A 34 95 15 A6,GT ---> DSP: Set band EQ 5kHz: -6
+38 6A 34 95 15 A5,GT ---> DSP: Set band EQ 5kHz: -5
+38 6A 34 95 15 A4,GT ---> DSP: Set band EQ 5kHz: -4
+38 6A 34 95 15 A3,GT ---> DSP: Set band EQ 5kHz: -3
+38 6A 34 95 15 A2,GT ---> DSP: Set band EQ 5kHz: -2
+38 6A 34 95 15 A1,GT ---> DSP: Set band EQ 5kHz: -1
+38 6A 34 95 15 B0,GT ---> DSP: Set band EQ 5kHz: 0
+38 6A 34 95 15 B1,GT ---> DSP: Set band EQ 5kHz: +1
+38 6A 34 95 15 B2,GT ---> DSP: Set band EQ 5kHz: +2
+38 6A 34 95 15 B3,GT ---> DSP: Set band EQ 5kHz: +3
+38 6A 34 95 15 B4,GT ---> DSP: Set band EQ 5kHz: +4
+38 6A 34 95 15 B5,GT ---> DSP: Set band EQ 5kHz: +5
+38 6A 34 95 15 B6,GT ---> DSP: Set band EQ 5kHz: +6
+38 6A 34 95 15 B7,GT ---> DSP: Set band EQ 5kHz: +7
+38 6A 34 95 15 B8,GT ---> DSP: Set band EQ 5kHz: +8
+38 6A 34 95 15 B9,GT ---> DSP: Set band EQ 5kHz: +9
+38 6A 34 95 15 BA,GT ---> DSP: Set band EQ 5kHz: +10
+
+38 6A 34 95 15 CA,GT ---> DSP: Set band EQ 12kHz: -10
+38 6A 34 95 15 C9,GT ---> DSP: Set band EQ 12kHz: -9
+38 6A 34 95 15 C8,GT ---> DSP: Set band EQ 12kHz: -8
+38 6A 34 95 15 C7,GT ---> DSP: Set band EQ 12kHz: -7
+38 6A 34 95 15 C6,GT ---> DSP: Set band EQ 12kHz: -6
+38 6A 34 95 15 C5,GT ---> DSP: Set band EQ 12kHz: -5
+38 6A 34 95 15 C4,GT ---> DSP: Set band EQ 12kHz: -4
+38 6A 34 95 15 C3,GT ---> DSP: Set band EQ 12kHz: -3
+38 6A 34 95 15 C2,GT ---> DSP: Set band EQ 12kHz: -2
+38 6A 34 95 15 C1,GT ---> DSP: Set band EQ 12kHz: -1
+38 6A 34 95 15 D0,GT ---> DSP: Set band EQ 12kHz: 0
+38 6A 34 95 15 D1,GT ---> DSP: Set band EQ 12kHz: +1
+38 6A 34 95 15 D2,GT ---> DSP: Set band EQ 12kHz: +2
+38 6A 34 95 15 D3,GT ---> DSP: Set band EQ 12kHz: +3
+38 6A 34 95 15 D4,GT ---> DSP: Set band EQ 12kHz: +4
+38 6A 34 95 15 D5,GT ---> DSP: Set band EQ 12kHz: +5
+38 6A 34 95 15 D6,GT ---> DSP: Set band EQ 12kHz: +6
+38 6A 34 95 15 D7,GT ---> DSP: Set band EQ 12kHz: +7
+38 6A 34 95 15 D8,GT ---> DSP: Set band EQ 12kHz: +8
+38 6A 34 95 15 D9,GT ---> DSP: Set band EQ 12kHz: +9
+38 6A 34 95 15 DA,GT ---> DSP: Set band EQ 12kHz: +10
+
 
 68 6A 34 95 00,RAD --> DSP: DSP room size 0
 68 6A 34 95 01,RAD --> DSP: DSP room size 1
@@ -97,16 +257,17 @@ DSP modes = {
 68 6A 34 95 26,RAD --> DSP: DSP echo amount 6
 68 6A 34 95 27,RAD --> DSP: DSP echo amount 7
 
+
 // B1: DSP mode
 // B2: Reverb
 // B3: Room size
 // B4: Frequency band 1: 80Hz
 // B5: Frequency band 2: 200Hz
 // B6: Frequency band 3: 500Hz
-// B7: Frequency band 4: 1KHz
-// B8: Frequency band 5: 2KHz
-// B9: Frequency band 6: 5KHz
-// BA: Frequency band 7: 12KHz
+// B7: Frequency band 4: 1kHz
+// B8: Frequency band 5: 2kHz
+// B9: Frequency band 6: 5kHz
+// BA: Frequency band 7: 12kHz
 
          B1 B2 B3 B4 B5 B6 B7 B8 B9 BA
 6A 68 35 04 04 21 0A 27 45 71 84 A9 CA,DSP --> RAD: Read DSP memory
