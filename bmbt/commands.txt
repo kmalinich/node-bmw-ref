@@ -1,11 +1,17 @@
 00,DIA,BMBT,Read identity
+
 01,BMBT,RAD,Device status request
+
 01,GT,BMBT,Device status request
+
 02 01,BMBT,GLO,Device status ready after Reset
 02 30,BMBT,GT,Device status ready Bit4 Bit5
+
 04 00,DIA,BMBT,Read fault memory Data="00"
 04 01,DIA,BMBT,Read fault memory Data="01"
+
 10,BMBT,IKE,Ignition status request
+
 32 10,BMBT,RAD,Volume Control Decrease 1 step
 32 11,BMBT,RAD,Volume Control Increase 1 step
 32 20,BMBT,RAD,Volume Control Decrease 2 steps
@@ -16,10 +22,12 @@
 32 41,BMBT,RAD,Volume Control Increase 4 steps
 32 50,BMBT,RAD,Volume Control Decrease 5 steps
 32 51,BMBT,RAD,Volume Control Increase 5 steps
+
 47 00 0F,BMBT,LOC,BM Status SELECT_pressed
 47 00 38,BMBT,LOC,BM Status INFO_pressed
 47 00 8F,BMBT,LOC,BM Status SELECT_released
 47 00 B8,BMBT,LOC,BM Status INFO_released
+
 48 00,BMBT,RAD,BM Button SEARCH_>_pressed
 48 01,BMBT,RAD,BM Button Preset_2_pressed
 48 02,BMBT,RAD,BM Button Preset_4_pressed
@@ -44,11 +52,13 @@
 48 32,BMBT,RAD,BM Button TP_pressed
 48 33,BMBT,RAD,BM Button DOLBY_pressed
 48 34,BMBT,LOC,BM Button MENU_pressed
+
 48 47,BMBT,LOC,BM Button CLOCK_long
 48 48,BMBT,LOC,BM Button TELEPHONE_long
 48 51,BMBT,RAD,BM Button Preset_1_long
 48 54,BMBT,RAD,BM Button Tape_Direction_long
 48 71,BMBT,RAD,BM Button FM_long
+
 48 80,BMBT,RAD,BM Button SEARCH_>_released
 48 81,BMBT,RAD,BM Button Preset_2_released
 48 82,BMBT,RAD,BM Button Preset_4_released
@@ -73,6 +83,7 @@
 48 B2,BMBT,RAD,BM Button TP_released
 48 B3,BMBT,RAD,BM Button DOLBY_released
 48 B4,BMBT,LOC,BM Button MENU_released
+
 49 01,BMBT,GT,BM_Knob Left 1 step
 49 02,BMBT,GT,BM_Knob Left 2 steps
 49 03,BMBT,GT,BM_Knob Left 3 steps
@@ -80,13 +91,16 @@
 49 81,BMBT,GT,BM_Knob Right 1 step
 49 82,BMBT,GT,BM_Knob Right 2 steps
 49 83,BMBT,GT,BM_Knob Right 3 steps
+
 4A 00,RAD,BMBT,Cassette control Power_Off
 4A 48,RAD,BMBT,Cassette control State_unknown Data="48"
 4A 5A,RAD,BMBT,Cassette control State_unknown Data="5A"
 4A 90,RAD,BMBT,Cassette control State_unknown Data="90"
 4A 90,VID,BMBT,Cassette control State_unknown Data="90"
 4A FF,RAD,BMBT,Cassette control Power_On
+
 4B 05,BMBT,RAD,Cassette status No_Tape
+
 4F 00 11,VID,BMBT,RGB control LCD_off
 4F 00,GT,BMBT,RGB control LCD_off
 4F 02 11,VID,BMBT,RGB control LCD_off GT
@@ -97,8 +111,11 @@
 4F 12 11,VID,BMBT,RGB control LCD_on GT
 4F 12,GT,BMBT,RGB control LCD_on GT
 4F 14 11,VID,BMBT,RGB control LCD_on NAVJ
+
 5D,BMBT,LCM,Light dimmer status request
+
 79,BMBT,GM,door/flap status request
+
 A0 03 03 01 01 0E 16 01,BMBT,DIA,Diagnostic command acknowledged Data="03 03 01 01 0E 16 01"
 A0 03,BMBT,DIA,Diagnostic command acknowledged Data="03"
 A0 86 93 44 12 56 00 31 10 26 03 17 49 00 00 00 00,BMBT,DIA,Diagnostic command acknowledged Data="86 93 44 12 56 00 31 10 26 03 17 49 00 00 00 00"
