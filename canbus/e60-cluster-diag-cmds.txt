@@ -1,0 +1,25 @@
+// Cmd ARBID : 0x6F1
+
+// Set speedo to 260kph
+60 05 30 20 06 12 3B FF
+
+// Set speedo to 200kph
+60 05 30 20 06 0E 06 FF
+
+// Reset speedo
+60 03 30 20 00 FF FF FF
+
+
+// Fuel to 100%
+60 05 30 22 06 07 08 FF
+
+// Fuel to 50%
+60 05 30 22 06 03 84 FF
+
+// Fuel to 51%
+60 05 30 22 06 03 96 FF
+
+// Reset fuel
+60 03 30 22 00 FF FF FF
+
+
