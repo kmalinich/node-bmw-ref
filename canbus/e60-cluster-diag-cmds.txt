@@ -1,9 +1,9 @@
 // Cmd ARBID : 0x6F1
 
-// Set speedo to 260kph
+// Speedo to 260kph
 60 05 30 20 06 12 3B FF
 
-// Set speedo to 200kph
+// Speedo to 200kph
 60 05 30 20 06 0E 06 FF
 
 // Reset speedo
@@ -21,5 +21,22 @@
 
 // Reset fuel
 60 03 30 22 00 FF FF FF
+
+
+// Tach to 7000 RPM
+60 05 30 21 06 12 0E FF
+
+// Tach to 5000 RPM
+60 05 30 21 06 0C E5 FF
+
+// Reset tach
+60 03 30 21 00 FF FF FF
+
+
+// Warmup/warning ring to 4000 RPM
+60 05 30 25 06 16 35 FF
+
+// Reset warning ring
+60 03 30 25 00 FF FF FF
 
 
