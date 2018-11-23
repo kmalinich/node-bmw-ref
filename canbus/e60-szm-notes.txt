@@ -1,0 +1,33 @@
+// Left active bolster released
+1ED#FCFF
+// Left active bolster depressed
+1ED#FDFF
+
+// Right active bolster released
+1EF#FCFF
+// Right active bolster depressed
+1EF#FDFF
+
+
+// Left status message
+232#0040F0
+
+// Right status message
+22A#00C0F0
+
+
+// Left active butt released
+1EB#FCFF
+// Left active butt depressed
+1EB#FDFF
+
+// Right active butt released
+1EC#FCFF
+// Right active butt depressed
+1EC#FDFF
+
+
+// PDC released
+317#FCFF
+// PDC depressed
+317#FDFF
