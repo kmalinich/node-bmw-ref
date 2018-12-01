@@ -303,10 +303,10 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x4C4,0x44,SHD,,Netzwerkmanagement,Network management
 0x4C5,0x45,RLS,,Netzwerkmanagement,Network management
 0x4CB,0x4B,VM,,Netzwerkmanagement,Network management
-0x4D0,0x50,Emergency siren,,Netzwerkmanagement,Network management
+0x4D0,0x50,SINE,,Netzwerkmanagement,Network management
 0x4D3,0x53,IBOC,,Netzwerkmanagement,Network management
 0x4D4,0x54,SDARS,,Netzwerkmanagement,Network management
-0x4D5,0x55,ISpeechBox,,Netzwerkmanagement,Network management
+0x4D5,0x55,ULF,,Netzwerkmanagement,Network management
 0x4D7,0x57,NVC,,Netzwerkmanagement,Network management
 0x4D9,0x59,ALBVFA,,Netzwerkmanagement,Network management
 0x4DA,0x5A,ALBVBF,,Netzwerkmanagement,Network management
@@ -334,8 +334,8 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x4FE,0x7E,DIA KCAN,,Netzwerkmanagement,Network management
 0x500,0x70,LM,1,Datentransfer,Data transfer
 0x500,0x78,IHKA,1,Datentransfer,Data transfer
-0x509,0x89,ALC Xenon headlight left,,Netzwerkmanagement,Network management
-0x50A,0x8A,ALC Xenon headlight right,,Netzwerkmanagement,Network management
+0x509,0x89,LSMC,,Netzwerkmanagement,Network management
+0x50A,0x8A,RSMC,,Netzwerkmanagement,Network management
 0x50B,0x8B,CNV,,Netzwerkmanagement,Network management
 0x571,0xF1,DIA,,Netzwerkmanagement,Network management
 0x580,0x00,KGM,,Dienste,Services
@@ -369,10 +369,10 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x5C4,0x44,SHD,,Dienste,Services
 0x5C5,0x45,RLS,,Dienste,Services
 0x5CB,0x4B,VM,,Dienste,Services
-0x5D0,0x50,Emergency siren,,Dienste,Services
+0x5D0,0x50,SINE,,Dienste,Services
 0x5D3,0x53,IBOC,,Dienste,Services
 0x5D4,0x54,SDARS,,Dienste,Services
-0x5D5,0x55,ISpeechBox,,Dienste,Services
+0x5D5,0x55,ULF,,Dienste,Services
 0x5D7,0x57,NVC,,Dienste,Services
 0x5D9,0x59,ALBVFA,,Dienste,Services
 0x5DA,0x5A,ALBVBF,,Dienste,Services
@@ -398,8 +398,8 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x5FA,0x7A,SHZH,,Dienste,Services
 0x5FD,0x7D,DIA PTCAN,,Dienste,Services
 0x5FE,0x7E,DIA KCAN,,Dienste,Services
-0x609,0x89,ALC Xenon headlight left,,Dienste,Services
-0x60A,0x8A,ALC Xenon headlight right,,Dienste,Services
+0x609,0x89,LSMC,,Dienste,Services
+0x60A,0x8A,RSMC,,Dienste,Services
 0x60B,0x8B,CNV,,Dienste,Services
 0x671,0xF1,DIA,,Dienste,Services
 0x7C0,0x40,CAS,3,CAS Programmierung Bandende 1,CAS programming end of band 1
