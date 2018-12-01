@@ -1,33 +1,35 @@
-// Left active bolster released
-1ED#FCFF
-// Left active bolster depressed
-1ED#FDFF
-
-// Right active bolster released
-1EF#FCFF
-// Right active bolster depressed
-1EF#FDFF
-
-
-// Left status message
-232#0040F0
-
-// Right status message
-22A#00C0F0
-
-
-// Left active butt released
+// Driver active seat released
 1EB#FCFF
-// Left active butt depressed
+// Driver active seat depressed
 1EB#FDFF
 
-// Right active butt released
+// Passenger active seat released
 1EC#FCFF
-// Right active butt depressed
+// Passenger active seat depressed
 1EC#FDFF
 
+// Driver active backrest released
+1ED#FCFF
+// Driver active backrest depressed
+1ED#FDFF
+
+// Passenger active backrest released
+1EF#FCFF
+// Passenger active backrest depressed
+1EF#FDFF
 
 // PDC released
 317#FCFF
 // PDC depressed
 317#FDFF
+
+// RDC released
+319#FCFF
+// RDC depressed
+319#FDFF
+
+
+// Left status message
+232#0040F0
+// Right status message
+22A#00C0F0

@@ -22,12 +22,12 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x0C0,0x00,KGM,1,Alive Zentrales gateway,Alive central gateway
 0x0C1,0x36,TEL_BPI/TEL_JAP,3,Alive Zähler Telefon,Alive counter phone
 0x0C4,0x29,DSC_CT/DSC_RB/DXC_RB,13,Lenkradwinkel KCAN,Steering wheel angle KCAN
-0x0C8,0x02,SZL_LWS,6,Lenkradwinkel Oben KCAN,Steering wheel angle top KCAN
+0x0C8,0x02,SZL,6,Lenkradwinkel Oben KCAN,Steering wheel angle top KCAN
 0x0CE,0x29,DSC_CT/DSC_RB/DXC_RB,4,Radgeschwindigkeit KCAN,Wheel speed KCAN
-0x0D2,0x65,SZM/SZM_KBUS,6,Bedienung Sitzverstellung BF,Operation seat adjustment BF
+0x0D2,0x65,SZM,6,Bedienung Sitzverstellung BF,Operation seat adjustment passenger
 0x0D5,0x1C,LDM,6,Anforderung Radmoment Bremse,Requirement wheel torque brake
 0x0D7,0x01,ACSM,2,Alive Zähler Sicherheit,Alive counter security
-0x0DA,0x65,SZM/SZM_KBUS,6,Bedienung Sitzverstellung FA,Operation seat adjustment FA
+0x0DA,0x65,SZM,6,Bedienung Sitzverstellung FA,Operation seat adjustment driver
 0x0E1,0x29,DSC_RB/DXC_RB,3,Radmoment Bremse,Wheel torque brake
 0x0E2,0x00,KGM,11,Status Zentralverriegelung BFT,Status central locking BFT
 0x0E6,0x72,KBM,11,Status Zentralverriegelung BFTH,Central locking status BFTH
@@ -45,9 +45,9 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x172,0x62,CCC_GW/M_ASK,1,Quittierung Anforderung KOMBI,Acknowledgment request KOMBI
 0x190,0x1C,LDM,13,Anzeige ACC,Display ACC
 0x190,0x21,ACC/ACC+NAVI,13,Anzeige ACC,Display ACC
-0x192,0x02,SZL_LWS,16,Bedienung Getriebewahlschalter,Operation gear selector switch
+0x192,0x02,SZL,16,Bedienung Getriebewahlschalter,Operation gear selector switch
 0x193,0x1C,LDM,4,Anzeige ACC DCC,Display ACC DCC
-0x194,0x02,SZL_LWS,13,Bedienung Tempomat/ACC,Operation cruise control/ACC
+0x194,0x02,SZL,13,Bedienung Tempomat/ACC,Operation cruise control/ACC
 0x198,0x5E,GWS,2,Bedienung Getriebewahlschalter 2,Operation gear selection switch 2
 0x19E,0x29,DSC_CT/DSC_RB/DXC_RB,19,Status DSC KCAN,Status DSC KCAN
 0x1A0,0x29,DSC_CT/DSC_RB/DXC_RB,14,Geschwindigkeit KCAN,Speed KCAN
@@ -65,24 +65,24 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x1C6,0x64,PDC,5,Akustikmeldung PDC,Acoustic message
 0x1D0,0x12,DME1,13,Motordaten,Motor data
 0x1D2,0x18,DCT/EGS/EGS+NAVI/SMG/SSG,22,Anzeige Getriebedaten,Display gearbox data
-0x1D6,0x02,SZL_LWS,12,Bedienung Taster Audio/Telefon,Operation Button Audio/Telephone
-0x1D8,0x62,CCC_GW/M_ASK,13,Bedienung Klima Luftverteilung FA,Operation Air distribution FA
-0x1D9,0x02,SZL_LWS,2,Bedienung Taster M-Drive,Operation button M-Drive
+0x1D6,0x02,SZL,12,Bedienung Taster Audio/Telefon,Operation Button Audio/Telephone
+0x1D8,0x62,CCC_GW/M_ASK,13,Bedienung Klima Luftverteilung FA,Operation Air distribution driver
+0x1D9,0x02,SZL,2,Bedienung Taster M-Drive,Button push M-Drive
 0x1DA,0x40,CAS,5,Bedienung Klima Fernwirken,Operation climate remote control
 0x1DC,0x62,CCC_GW/M_ASK,1,Bedienung Schichtung Sitzheizung,Operation layering seat heating
-0x1E0,0x62,CCC_GW/M_ASK,7,Bedienung Klima Luftverteilung BF,Operation Air distribution BF
+0x1E0,0x62,CCC_GW/M_ASK,7,Bedienung Klima Luftverteilung BF,Operation Air distribution passenger
 0x1E2,0x62,CCC_GW/M_ASK,11,Bedienung Klima front,Operation climate front
-0x1E7,0x65,SZM/SZM_KBUS,7,Bedienung Sitzheizung/Sitzklima FA,Operation seat heating/seat climate FA
-0x1E8,0x65,SZM/SZM_KBUS,7,Bedienung Sitzheizung/Sitzklima BF,Operation Heated seats/seating climate BF
-0x1EA,0x02,SZL_LWS,5,Bedienung Lenksäulenverstellung,Operation steering column adjustment
-0x1EB,0x65,SZM/SZM_KBUS,3,Bedienung Aktivsitz FA,Operation Active seat FA
-0x1EC,0x65,SZM/SZM_KBUS,3,Bedienung Aktivsitz BF,Operation Active seat BF
-0x1ED,0x65,SZM/SZM_KBUS,2,Bedienung Lehnenbreitenverstellung Aktiv FA,Operation active backrest FA
-0x1EE,0x02,SZL_LWS,6,Bedienung Lenkstockstaster,Operation steering column button
-0x1EF,0x65,SZM/SZM_KBUS,2,Bedienung Lehnenbreitenverstellung Aktiv BF,Operation active backrest BF
-0x1F2,0x65,SZM/SZM_KBUS,3,Bedienung Sitzmemory BF,Operation seat memory BF
-0x1F3,0x65,SZM/SZM_KBUS,4,Bedienung Sitzmemory FA,Operation seat memory FA
-0x1F4,0x??,Unknown,2,Fernbedienung Sitzmemory BF,Remote control seat memory BF
+0x1E7,0x65,SZM,7,Bedienung Sitzheizung/Sitzklima FA,Operation seat heating/ventilation driver
+0x1E8,0x65,SZM,7,Bedienung Sitzheizung/Sitzklima BF,Operation seat heating/ventilation passenger
+0x1EA,0x02,SZL,5,Bedienung Lenksäulenverstellung,Operation steering column adjustment
+0x1EB,0x65,SZM,3,Bedienung Aktivsitz FA,Operation Active seat driver
+0x1EC,0x65,SZM,3,Bedienung Aktivsitz BF,Operation Active seat passenger
+0x1ED,0x65,SZM,2,Bedienung Lehnenbreitenverstellung Aktiv FA,Operation active backrest driver
+0x1EE,0x02,SZL,6,Bedienung Lenkstockstaster,Operation steering column button
+0x1EF,0x65,SZM,2,Bedienung Lehnenbreitenverstellung Aktiv BF,Operation active backrest passenger
+0x1F2,0x65,SZM,3,Bedienung Sitzmemory BF,Operation seat memory passenger
+0x1F3,0x65,SZM,4,Bedienung Sitzmemory FA,Operation seat memory driver
+0x1F4,0x??,Unknown,2,Fernbedienung Sitzmemory BF,Remote control seat memory passenger
 0x1F6,0x70,LM,6,Blinken,Flashing
 0x1FC,0x16,AFS,4,Status AFS,Status AFS
 0x1FE,0x01,ACSM,12,Crash,Crash
@@ -90,10 +90,10 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x202,0x70,LM,10,Dimmung,Dimming
 0x205,0x60,KOMBI,3,Akustikanforderung KOMBI,Acoustic requirement
 0x206,0x12,DME1,1,Steuerung Anzeige Shiftlights,Control display shift lights
-0x20B,0x65,SZM_KBUS,6,Memoryverstellung,Memory adjustment
+0x20B,0x65,SZM,6,Memoryverstellung,Memory adjustment
 0x20B,0x6D,SM_FA,6,Memoryverstellung,Memory adjustment
 0x20C,0x6D,SM_FA,4,Steuerung Lenksäule,Steering column control
-0x20D,0x65,SZM/SZM_KBUS,5,Position Lenksäule,Steering column position
+0x20D,0x65,SZM,5,Position Lenksäule,Steering column position
 0x210,0x62,CCC_GW/M_ASK,7,Bedienung HUD,Operation HUD
 0x211,0x3D,HUD,7,Status HUD,Status HUD
 0x212,0x38,EHC,8,Höhenstände Luftfeder,Ride height air spring
@@ -108,20 +108,20 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x22E,0x??,SM_BFH,7,Status BFSH,Status BFSH
 0x232,0x6D,SM_FA,10,Status FAS,Status FAS
 0x236,0x??,SM_FASH,7,Status FASH,Status FASH
-0x237,0x5A,ALBV_BF,3,Status Lehnenbreitenverstellung Aktiv BF,Status active backrest BF
-0x239,0x59,ALBV_FA,3,Status Lehnenbreitenverstellung Aktiv FA,Status active backrest FA
+0x237,0x5A,ALBV_BF,3,Status Lehnenbreitenverstellung Aktiv BF,Status active backrest passenger
+0x239,0x59,ALBV_FA,3,Status Lehnenbreitenverstellung Aktiv FA,Status active backrest driver
 0x23A,0x40,CAS,13,Status Funkschlüssel,Status remote key
 0x23B,0x78,IHKA,1,Status Klima front Erweitert,Status climate front extended
-0x23C,0x6D,SM_FA,1,Status Bedienung Sitzkomfort FA,Status Operation Seating comfort FA
-0x23F,0x6E,SM_BF,1,Status Bedienung Sitzkomfort BF,Status Operation Seating comfort BF
+0x23C,0x6D,SM_FA,1,Status Bedienung Sitzkomfort FA,Status Operation Seating comfort driver
+0x23F,0x6E,SM_BF,1,Status Bedienung Sitzkomfort BF,Status Operation Seating comfort passenger
 0x242,0x78,IHKA,11,Status Klima front,Status climate front
 0x24A,0x64,PDC,6,Status PDC,Status PDC
 0x252,0x72,KBM,8,Wischerstatus,Wiper status
 0x256,0x40,CAS,10,Challenge Passive Access,Challenge Passive Access
 0x258,0x27,PGS,4,Status Transmission Passive Access,Status Transmission Passive Access
 0x25C,0x62,CCC_GW/M_ASK,2,Bedienung Klima Zusatzprogramme,Operation climate Additional programs
-0x26B,0x??,Unknown,2,Bedienung Rollos BF,Operation roller blinds BF
-0x26C,0x00,KGM,2,Bedienung Rollos FA,Operation Blinds FA
+0x26B,0x??,Unknown,2,Bedienung Rollos BF,Operation roller blinds passenger
+0x26C,0x00,KGM,2,Bedienung Rollos FA,Operation Blinds driver
 0x26D,0x??,Unknown,1,Bedienung Rollos MK,Operation roller blinds MK
 0x26E,0x40,CAS,10,Steuerung FH/SHD Zentrale (Komfort),Control FH/SHD control panel (Comfort)
 0x26F,0x??,Unknown,2,Bedienung Rollos BFH,Operation roller blinds BFH
@@ -130,7 +130,7 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x27A,0x62,CCC_GW,4,Synchronisation Navigationsgraph,Synchronization navigation graph
 0x27E,0x24,CVM_V,7,Status Verdeck Cabrio,Status Convertible Convertible
 0x284,0x40,CAS,8,Steuerung Fernstart Sicherheitsfahrzeug,Control remote start safety vehicle
-0x285,0x65,SZM/SZM_KBUS,3,Steuerung Rollos,Control roller blinds
+0x285,0x65,SZM,3,Steuerung Rollos,Control roller blinds
 0x28C,0x5E,GWS,2,Bedienung Taster Vertikaldynamik,Button push vertical dynamics
 0x290,0x??,Unknown,1,Steuerung Reaktion Wasserstoff-Fahrzeug,Control reaction hydrogen vehicle
 0x292,0x5F,FLA,2,Steuerung Fernlicht-Assistent,Control High Beam Assistant
@@ -138,7 +138,7 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x2A0,0x40,CAS,10,Steuerung Zentralverriegelung,Central locking control
 0x2A2,0x62,CCC_GW/M_ASK,5,Bedienung Klima Standfunktionen,Operation climate Stand functions
 0x2A4,0x62,CCC_GW/M_ASK,8,Bedienung Personalisierung,Operation personalization
-0x2A6,0x02,SZL_LWS,12,Bedienung Wischertaster,Operation wiper button
+0x2A6,0x02,SZL,12,Bedienung Wischertaster,Operation wiper button
 0x2B2,0x29,DSC_CT/DSC_RB/DXC_RB,1,Raddrücke KCAN,Wheel pressures KCAN
 0x2B3,0x29,DSC_CT/DSC_RB/DXC_RB,2,Beschleunigungsdaten,Acceleration data
 0x2B4,0x41,DWA,4,DWA-Alarm,DWA alarm
@@ -152,8 +152,8 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x2DA,0x6B,HKL,2,Status Heckklappenlift,Status tailgate lift
 0x2E2,0x57,NVC,1,Status Einstellung Video night vision,Status setting video night vision
 0x2E4,0x71,AHM,8,Status Anhänger,Status Trailer
-0x2E6,0x78,IHKA,13,Status Klima Luftverteilung FA,Status climate air distribution FA
-0x2EA,0x78,IHKA,9,Status Klima Luftverteilung BF,Status climate air distribution BF
+0x2E6,0x78,IHKA,13,Status Klima Luftverteilung FA,Status climate air distribution driver
+0x2EA,0x78,IHKA,9,Status Klima Luftverteilung BF,Status climate air distribution passenger
 0x2EC,0x7A,SH_ZH,14,Status Klima SH/ZH Zusatzwasserpumpe,Status climate SH/ZH auxiliary water pump
 0x2EE,0x78,IHKA,2,Status Klima Zusatzprogramme,Status climate additional programs
 0x2F0,0x78,IHKA,12,Status Klima Standfunktionen,Status climate standing functions
@@ -174,10 +174,10 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x313,0x62,CCC_GW/M_ASK,3,Status Service Call Teleservice,Status service call teleservice
 0x314,0x45,RLS,9,Status Fahrlicht,Status driving light
 0x314,0x70,LM,9,Status Fahrlicht,Status driving light
-0x315,0x65,SZM/SZM_KBUS,7,Fahrzeugmodus,Vehicle mode
-0x317,0x65,SZM/SZM_KBUS,1,Bedienung Taster PDC,Button push PDC
+0x315,0x65,SZM,7,Fahrzeugmodus,Vehicle mode
+0x317,0x65,SZM,1,Bedienung Taster PDC,Button push PDC
 0x318,0x27,PGS,7,Status Antennen Passive Access,Status antennas passive access
-0x319,0x65,SZM,4,Bedienung Taster RDC,Operation button RDC
+0x319,0x65,SZM,4,Bedienung Taster RDC,Button push RDC
 0x31C,0x20,RDC,6,Status Reifendruck,Status of tire pressure
 0x31D,0x29,DSC_CT/DSC_RB/DXC_RB,6,Status Reifenpannenanzeige,Status flat tire indicator
 0x322,0x39,EDCK,2,Dämpferstrom,Damper current
@@ -197,11 +197,11 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x33A,0x73,CID_C/CID_C_H,3,Status Monitor front,Status Monitor front
 0x348,0x62,CCC_GW,4,Übereinstimmung Navigationsgraph,Match navigation graph
 0x34A,0x62,CCC_GW,5,Navigation GPS 1,Navigation GPS 1
-0x34B,0x65,SZM_KBUS,3,Status Sitzlehnenverriegelung FA,Status seat back lock FA
-0x34B,0x6D,SM_FA,3,Status Sitzlehnenverriegelung FA,Status seat back lock FA
+0x34B,0x65,SZM,3,Status Sitzlehnenverriegelung FA,Status seat back lock driver
+0x34B,0x6D,SM_FA,3,Status Sitzlehnenverriegelung FA,Status seat back lock driver
 0x34C,0x62,CCC_GW,5,Navigation GPS 2,Navigation GPS 2
-0x34D,0x65,SZM_KBUS,2,Status Sitzlehnenverriegelung BF,Status seat back lock BF
-0x34D,0x6E,SM_BF,2,Status Sitzlehnenverriegelung BF,Status seat back lock BF
+0x34D,0x65,SZM,2,Status Sitzlehnenverriegelung BF,Status seat back lock passenger
+0x34D,0x6E,SM_BF,2,Status Sitzlehnenverriegelung BF,Status seat back lock passenger
 0x34E,0x62,CCC_GW,6,Navigation System Information,Navigation System Information
 0x35A,0x62,CCC_GW/M_ASK,2,Termin Condition Based Service,CBS appointment
 0x35C,0x60,KOMBI,5,Status Bordcomputer,OBC status
@@ -252,7 +252,7 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x3D9,0x45,RLS,4,Status RLS CKM,Status RLS CKM
 0x3D9,0x70,LM,4,Status RLS CKM,Status RLS CKM
 0x3DA,0x62,CCC_GW/M_ASK,1,Konfiguration Memorypositionen CKM,Configuration memory positions CKM
-0x3DB,0x65,SZM_KBUS,3,Status Memorypositionen CKM,Status memory positions CKM
+0x3DB,0x65,SZM,3,Status Memorypositionen CKM,Status memory positions CKM
 0x3DB,0x6D,SM_FA,3,Status Memorypositionen CKM,Status memory positions CKM
 0x3DC,0x62,CCC_GW/M_ASK,3,Konfiguration Licht CKM,Configuration light CKM
 0x3DD,0x70,LM,4,Status Licht CKM,Status Light CKM
@@ -274,7 +274,7 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x3FE,0x7E,Diagnostic tool (KCAN),5,Anforderung CAN_Testtool SI-Bus,Requirement CAN Test tool SI-Bus
 0x480,0x00,KGM,,Netzwerkmanagement,Network management
 0x481,0x01,ACSM,,Netzwerkmanagement,Network management
-0x482,0x02,SZL_LWS,,Netzwerkmanagement,Network management
+0x482,0x02,SZL,,Netzwerkmanagement,Network management
 0x492,0x12,DME1,,Netzwerkmanagement,Network management
 0x496,0x16,AFS,,Netzwerkmanagement,Network management
 0x497,0x17,EKP,,Netzwerkmanagement,Network management
@@ -319,7 +319,7 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x4E2,0x62,CCC_GW/M_ASK,,Netzwerkmanagement,Network management
 0x4E3,0x63,CCC_MM,,Netzwerkmanagement,Network management
 0x4E4,0x64,PDC,,Netzwerkmanagement,Network management
-0x4E5,0x65,SZM/SZM_KBUS,,Netzwerkmanagement,Network management
+0x4E5,0x65,SZM,,Netzwerkmanagement,Network management
 0x4E7,0x67,ZBE/ZBE_LO,,Netzwerkmanagement,Network management
 0x4EB,0x6B,HKL,,Netzwerkmanagement,Network management
 0x4ED,0x6D,SM_FA/SM_FA_KBUS,,Netzwerkmanagement,Network management
@@ -340,7 +340,7 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x571,0xF1,Diagnostic socket,,Netzwerkmanagement,Network management
 0x580,0x00,KGM,,Dienste,Services
 0x581,0x01,ACSM,,Dienste,Services
-0x582,0x02,SZL_LWS,,Dienste,Services
+0x582,0x02,SZL,,Dienste,Services
 0x592,0x12,DME1,,Dienste,Services
 0x596,0x16,AFS,,Dienste,Services
 0x597,0x17,EKP,,Dienste,Services
@@ -385,7 +385,7 @@ ARBID,Diag ID,Module,Length,Description (German),Description (translated)
 0x5E2,0x62,CCC_GW/M_ASK,,Dienste,Services
 0x5E3,0x63,CCC_MM,,Dienste,Services
 0x5E4,0x64,PDC,,Dienste,Services
-0x5E5,0x65,SZM/SZM_KBUS,,Dienste,Services
+0x5E5,0x65,SZM,,Dienste,Services
 0x5E7,0x67,ZBE/ZBE_LO,,Dienste,Services
 0x5EB,0x6B,HKL,,Dienste,Services
 0x5ED,0x6D,SM_FA/SM_FA_KBUS,,Dienste,Services
