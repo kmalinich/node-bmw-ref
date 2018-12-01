@@ -29,7 +29,13 @@
 319#FDFF
 
 
-// Left status message
+// Driver seat status message
 232#0040F0
-// Right status message
+// Passenger seat status message
 22A#00C0F0
+
+// Status active backrest driver
+239#F0FF
+239#F3FF
+// Status active backrest passenger
+237#
