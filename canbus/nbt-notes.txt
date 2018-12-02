@@ -1,0 +1,21 @@
+// Units
+
+// Time format - 12h
+291#00 07 00 00 00 F0
+
+// Time format - 24h
+291#00 0B 00 00 00 F0
+
+
+
+// Date format - dd.mm.yyyy
+291#00 03 00 08 00 F0
+
+// Date format - mm/dd/yyyy
+291#00 03 00 10 00 F0
+
+// Date format - yyyy.mm.dd
+291#00 03 00 28 00 F0
+
+// Date format - yyyy/mm/dd
+291#00 03 00 30 00 F0
